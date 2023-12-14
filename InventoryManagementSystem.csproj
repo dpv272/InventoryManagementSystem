@@ -52,10 +52,19 @@
     <Compile Include="CustomButton.Designer.cs">
       <DependentUpon>CustomButton.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginWindow.Designer.cs">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="CustomButton.resx">
       <DependentUpon>CustomButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginWindow.resx">
+      <DependentUpon>LoginWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -65,6 +74,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +88,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="img\Close.png" />
+    <Content Include="img\Close_hover.png" />
+    <None Include="img\Logo.png" />
+    <Content Include="img\Warehouse.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
