@@ -17,7 +17,7 @@ namespace InventoryManagementSystem
             InitializeComponent();
         }
 
-        private void checkBoxPass_CheckedChanged(object sender, EventArgs e)
+        private void CheckBoxPass_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxPass.Checked)
                 textBoxPass.UseSystemPasswordChar = false;
@@ -25,7 +25,7 @@ namespace InventoryManagementSystem
                 textBoxPass.UseSystemPasswordChar = true;
         }
 
-        private void customButtonClose_Click(object sender, EventArgs e)
+        private void CustomButtonClose_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Do you want to exit?", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 Application.Exit();

@@ -95,7 +95,7 @@
             this.customButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.customButtonClose.TabIndex = 1;
             this.customButtonClose.TabStop = false;
-            this.customButtonClose.Click += new System.EventHandler(this.customButtonClose_Click);
+            this.customButtonClose.Click += new System.EventHandler(this.CustomButtonClose_Click);
             // 
             // pictureBox1
             // 
@@ -174,7 +174,7 @@
             this.checkBoxPass.TabIndex = 7;
             this.checkBoxPass.Text = "Show Password";
             this.checkBoxPass.UseVisualStyleBackColor = true;
-            this.checkBoxPass.CheckedChanged += new System.EventHandler(this.checkBoxPass_CheckedChanged);
+            this.checkBoxPass.CheckedChanged += new System.EventHandler(this.CheckBoxPass_CheckedChanged);
             // 
             // buttonLogin
             // 
