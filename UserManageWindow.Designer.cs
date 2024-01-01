@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.customButtonClose = new InventoryManagementSystem.CustomButton();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBoxUsername = new System.Windows.Forms.TextBox();
@@ -42,11 +43,13 @@
             this.buttonUpdate = new System.Windows.Forms.Button();
             this.buttonClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customButtonClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
+            this.panel1.Controls.Add(this.customButtonClose);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -54,6 +57,20 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(640, 50);
             this.panel1.TabIndex = 0;
+            // 
+            // customButtonClose
+            // 
+            this.customButtonClose.Image = global::InventoryManagementSystem.Properties.Resources.Close;
+            this.customButtonClose.Img = global::InventoryManagementSystem.Properties.Resources.Close;
+            this.customButtonClose.ImgHover = global::InventoryManagementSystem.Properties.Resources.Close_hover;
+            this.customButtonClose.Location = new System.Drawing.Point(615, 0);
+            this.customButtonClose.Margin = new System.Windows.Forms.Padding(615, 0, 0, 25);
+            this.customButtonClose.Name = "customButtonClose";
+            this.customButtonClose.Size = new System.Drawing.Size(25, 25);
+            this.customButtonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.customButtonClose.TabIndex = 1;
+            this.customButtonClose.TabStop = false;
+            this.customButtonClose.Click += new System.EventHandler(this.CustomButtonClose_Click);
             // 
             // label1
             // 
@@ -118,6 +135,7 @@
             this.textBoxPassword.Name = "textBoxPassword";
             this.textBoxPassword.Size = new System.Drawing.Size(286, 20);
             this.textBoxPassword.TabIndex = 6;
+            this.textBoxPassword.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -164,6 +182,7 @@
             this.buttonSave.TabIndex = 9;
             this.buttonSave.Text = "Save";
             this.buttonSave.UseVisualStyleBackColor = false;
+            this.buttonSave.Click += new System.EventHandler(this.ButtonSave_Click);
             // 
             // buttonUpdate
             // 
@@ -178,6 +197,7 @@
             this.buttonUpdate.TabIndex = 10;
             this.buttonUpdate.Text = "Update";
             this.buttonUpdate.UseVisualStyleBackColor = false;
+            this.buttonUpdate.Click += new System.EventHandler(this.ButtonUpdate_Click);
             // 
             // buttonClear
             // 
@@ -192,6 +212,7 @@
             this.buttonClear.TabIndex = 11;
             this.buttonClear.Text = "Clear";
             this.buttonClear.UseVisualStyleBackColor = false;
+            this.buttonClear.Click += new System.EventHandler(this.ButtonClear_Click);
             // 
             // UserManageWindow
             // 
@@ -216,6 +237,7 @@
             this.Text = "UserManageWindow";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customButtonClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,5 +258,6 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.Button buttonUpdate;
         private System.Windows.Forms.Button buttonClear;
+        private CustomButton customButtonClose;
     }
 }
