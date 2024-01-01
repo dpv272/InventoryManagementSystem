@@ -20,6 +20,7 @@ namespace InventoryManagementSystem
         public UserWindow()
         {
             InitializeComponent();
+            LoadUser();
         }
 
         public void LoadUser()

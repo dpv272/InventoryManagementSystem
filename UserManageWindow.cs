@@ -30,7 +30,7 @@ namespace InventoryManagementSystem
         {
             try
             {
-                if (MessageBox.Show("Do you want to save this user information?", "Saving information!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Do you want to save this user information?", "Saving information!", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cmd = new SqlCommand("INSERT INTO tableUser(username, fullname, password, phone)VALUES(@username, @fullname, @password, @phone)", con);
 
