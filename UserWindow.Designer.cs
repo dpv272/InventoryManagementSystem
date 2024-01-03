@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.customButton1 = new InventoryManagementSystem.CustomButton();
+            this.buttonAdd = new InventoryManagementSystem.CustomButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridViewUser = new System.Windows.Forms.DataGridView();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,15 +40,17 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Edit = new System.Windows.Forms.DataGridViewImageColumn();
             this.Delete = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Navy;
-            this.panel1.Controls.Add(this.customButton1);
+            this.panel1.Controls.Add(this.buttonAdd);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 520);
@@ -59,18 +59,19 @@
             this.panel1.Size = new System.Drawing.Size(1024, 56);
             this.panel1.TabIndex = 0;
             // 
-            // customButton1
+            // buttonAdd
             // 
-            this.customButton1.Image = global::InventoryManagementSystem.Properties.Resources.Add;
-            this.customButton1.Img = global::InventoryManagementSystem.Properties.Resources.Add;
-            this.customButton1.ImgHover = global::InventoryManagementSystem.Properties.Resources.Add_hover;
-            this.customButton1.Location = new System.Drawing.Point(979, 13);
-            this.customButton1.Margin = new System.Windows.Forms.Padding(410, 13, 15, 13);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(30, 30);
-            this.customButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customButton1.TabIndex = 1;
-            this.customButton1.TabStop = false;
+            this.buttonAdd.Image = global::InventoryManagementSystem.Properties.Resources.Add;
+            this.buttonAdd.Img = global::InventoryManagementSystem.Properties.Resources.Add;
+            this.buttonAdd.ImgHover = global::InventoryManagementSystem.Properties.Resources.Add_hover;
+            this.buttonAdd.Location = new System.Drawing.Point(979, 13);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(410, 13, 15, 13);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.Size = new System.Drawing.Size(30, 30);
+            this.buttonAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonAdd.TabIndex = 1;
+            this.buttonAdd.TabStop = false;
+            this.buttonAdd.Click += new System.EventHandler(this.ButtonAdd_Click);
             // 
             // label1
             // 
@@ -89,14 +90,14 @@
             this.dataGridViewUser.AllowUserToAddRows = false;
             this.dataGridViewUser.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridViewUser.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Navy;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Navy;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewUser.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewUser.ColumnHeadersHeight = 30;
             this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridViewUser.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -115,20 +116,6 @@
             this.dataGridViewUser.Name = "dataGridViewUser";
             this.dataGridViewUser.Size = new System.Drawing.Size(1024, 520);
             this.dataGridViewUser.TabIndex = 1;
-            // 
-            // dataGridViewImageColumn1
-            // 
-            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn1.HeaderText = "";
-            this.dataGridViewImageColumn1.Image = global::InventoryManagementSystem.Properties.Resources.Edit;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            // 
-            // dataGridViewImageColumn2
-            // 
-            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.dataGridViewImageColumn2.HeaderText = "";
-            this.dataGridViewImageColumn2.Image = global::InventoryManagementSystem.Properties.Resources.Delete;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
             // 
             // Column5
             // 
@@ -182,6 +169,20 @@
             this.Delete.Name = "Delete";
             this.Delete.Width = 5;
             // 
+            // dataGridViewImageColumn1
+            // 
+            this.dataGridViewImageColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn1.HeaderText = "";
+            this.dataGridViewImageColumn1.Image = global::InventoryManagementSystem.Properties.Resources.Edit;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.dataGridViewImageColumn2.HeaderText = "";
+            this.dataGridViewImageColumn2.Image = global::InventoryManagementSystem.Properties.Resources.Delete;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            // 
             // UserWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -195,7 +196,7 @@
             this.Text = "UserWindow";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).EndInit();
             this.ResumeLayout(false);
 
@@ -206,7 +207,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.DataGridView dataGridViewUser;
         private System.Windows.Forms.Label label1;
-        private CustomButton customButton1;
+        private CustomButton buttonAdd;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn1;
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;

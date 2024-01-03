@@ -40,6 +40,18 @@ namespace InventoryManagementSystem
 
                 dataGridViewUser.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString());
             }
+
+            dr.Close();
+            con.Close();
+        }
+
+        private void ButtonAdd_Click(object sender, EventArgs e)
+        {
+            UserManageWindow userManageWindow = new UserManageWindow();
+
+            userManageWindow.buttonSave.Enabled = true;
+            userManageWindow.buttonUpdate.Enabled = false;
+            userManageWindow.ShowDialog();
         }
     }
 }

@@ -30,42 +30,42 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.customButton2 = new InventoryManagementSystem.CustomButton();
+            this.buttonCustomer = new InventoryManagementSystem.CustomButton();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.customButton5 = new InventoryManagementSystem.CustomButton();
+            this.buttonOrder = new InventoryManagementSystem.CustomButton();
             this.label3 = new System.Windows.Forms.Label();
-            this.customButton3 = new InventoryManagementSystem.CustomButton();
+            this.buttonCategory = new InventoryManagementSystem.CustomButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.customButton4 = new InventoryManagementSystem.CustomButton();
+            this.buttonUser = new InventoryManagementSystem.CustomButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.customButton1 = new InventoryManagementSystem.CustomButton();
+            this.buttonProduct = new InventoryManagementSystem.CustomButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonCustomer)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonCategory)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonUser)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonProduct)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.customButton2);
+            this.panel1.Controls.Add(this.buttonCustomer);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.customButton5);
+            this.panel1.Controls.Add(this.buttonOrder);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.customButton3);
+            this.panel1.Controls.Add(this.buttonCategory);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.customButton4);
+            this.panel1.Controls.Add(this.buttonUser);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.customButton1);
+            this.panel1.Controls.Add(this.buttonProduct);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -86,18 +86,18 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "ORDERS";
             // 
-            // customButton2
+            // buttonCustomer
             // 
-            this.customButton2.Image = global::InventoryManagementSystem.Properties.Resources.Customer;
-            this.customButton2.Img = global::InventoryManagementSystem.Properties.Resources.Customer;
-            this.customButton2.ImgHover = global::InventoryManagementSystem.Properties.Resources.Customer_hover;
-            this.customButton2.Location = new System.Drawing.Point(588, 29);
-            this.customButton2.Margin = new System.Windows.Forms.Padding(75, 20, 75, 5);
-            this.customButton2.Name = "customButton2";
-            this.customButton2.Size = new System.Drawing.Size(48, 48);
-            this.customButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customButton2.TabIndex = 2;
-            this.customButton2.TabStop = false;
+            this.buttonCustomer.Image = global::InventoryManagementSystem.Properties.Resources.Customer;
+            this.buttonCustomer.Img = global::InventoryManagementSystem.Properties.Resources.Customer;
+            this.buttonCustomer.ImgHover = global::InventoryManagementSystem.Properties.Resources.Customer_hover;
+            this.buttonCustomer.Location = new System.Drawing.Point(588, 29);
+            this.buttonCustomer.Margin = new System.Windows.Forms.Padding(75, 20, 75, 5);
+            this.buttonCustomer.Name = "buttonCustomer";
+            this.buttonCustomer.Size = new System.Drawing.Size(48, 48);
+            this.buttonCustomer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonCustomer.TabIndex = 2;
+            this.buttonCustomer.TabStop = false;
             // 
             // label5
             // 
@@ -123,18 +123,18 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "CATEGORIES";
             // 
-            // customButton5
+            // buttonOrder
             // 
-            this.customButton5.Image = global::InventoryManagementSystem.Properties.Resources.Order;
-            this.customButton5.Img = global::InventoryManagementSystem.Properties.Resources.Order;
-            this.customButton5.ImgHover = global::InventoryManagementSystem.Properties.Resources.Order_hover;
-            this.customButton5.Location = new System.Drawing.Point(1182, 29);
-            this.customButton5.Margin = new System.Windows.Forms.Padding(75, 20, 120, 5);
-            this.customButton5.Name = "customButton5";
-            this.customButton5.Size = new System.Drawing.Size(48, 48);
-            this.customButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customButton5.TabIndex = 5;
-            this.customButton5.TabStop = false;
+            this.buttonOrder.Image = global::InventoryManagementSystem.Properties.Resources.Order;
+            this.buttonOrder.Img = global::InventoryManagementSystem.Properties.Resources.Order;
+            this.buttonOrder.ImgHover = global::InventoryManagementSystem.Properties.Resources.Order_hover;
+            this.buttonOrder.Location = new System.Drawing.Point(1182, 29);
+            this.buttonOrder.Margin = new System.Windows.Forms.Padding(75, 20, 120, 5);
+            this.buttonOrder.Name = "buttonOrder";
+            this.buttonOrder.Size = new System.Drawing.Size(48, 48);
+            this.buttonOrder.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonOrder.TabIndex = 5;
+            this.buttonOrder.TabStop = false;
             // 
             // label3
             // 
@@ -148,18 +148,18 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "CUSTOMERS";
             // 
-            // customButton3
+            // buttonCategory
             // 
-            this.customButton3.Image = global::InventoryManagementSystem.Properties.Resources.Category;
-            this.customButton3.Img = global::InventoryManagementSystem.Properties.Resources.Category;
-            this.customButton3.ImgHover = global::InventoryManagementSystem.Properties.Resources.Category_hover;
-            this.customButton3.Location = new System.Drawing.Point(786, 29);
-            this.customButton3.Margin = new System.Windows.Forms.Padding(75, 20, 75, 5);
-            this.customButton3.Name = "customButton3";
-            this.customButton3.Size = new System.Drawing.Size(48, 48);
-            this.customButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customButton3.TabIndex = 3;
-            this.customButton3.TabStop = false;
+            this.buttonCategory.Image = global::InventoryManagementSystem.Properties.Resources.Category;
+            this.buttonCategory.Img = global::InventoryManagementSystem.Properties.Resources.Category;
+            this.buttonCategory.ImgHover = global::InventoryManagementSystem.Properties.Resources.Category_hover;
+            this.buttonCategory.Location = new System.Drawing.Point(786, 29);
+            this.buttonCategory.Margin = new System.Windows.Forms.Padding(75, 20, 75, 5);
+            this.buttonCategory.Name = "buttonCategory";
+            this.buttonCategory.Size = new System.Drawing.Size(48, 48);
+            this.buttonCategory.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonCategory.TabIndex = 3;
+            this.buttonCategory.TabStop = false;
             // 
             // label2
             // 
@@ -173,18 +173,19 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "PRODUCTS";
             // 
-            // customButton4
+            // buttonUser
             // 
-            this.customButton4.Image = global::InventoryManagementSystem.Properties.Resources.Users;
-            this.customButton4.Img = global::InventoryManagementSystem.Properties.Resources.Users;
-            this.customButton4.ImgHover = global::InventoryManagementSystem.Properties.Resources.Users_hover;
-            this.customButton4.Location = new System.Drawing.Point(984, 29);
-            this.customButton4.Margin = new System.Windows.Forms.Padding(75, 20, 75, 5);
-            this.customButton4.Name = "customButton4";
-            this.customButton4.Size = new System.Drawing.Size(48, 48);
-            this.customButton4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customButton4.TabIndex = 4;
-            this.customButton4.TabStop = false;
+            this.buttonUser.Image = global::InventoryManagementSystem.Properties.Resources.Users;
+            this.buttonUser.Img = global::InventoryManagementSystem.Properties.Resources.Users;
+            this.buttonUser.ImgHover = global::InventoryManagementSystem.Properties.Resources.Users_hover;
+            this.buttonUser.Location = new System.Drawing.Point(984, 29);
+            this.buttonUser.Margin = new System.Windows.Forms.Padding(75, 20, 75, 5);
+            this.buttonUser.Name = "buttonUser";
+            this.buttonUser.Size = new System.Drawing.Size(48, 48);
+            this.buttonUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonUser.TabIndex = 4;
+            this.buttonUser.TabStop = false;
+            this.buttonUser.Click += new System.EventHandler(this.ButtonUser_Click);
             // 
             // pictureBox1
             // 
@@ -197,18 +198,18 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // customButton1
+            // buttonProduct
             // 
-            this.customButton1.Image = global::InventoryManagementSystem.Properties.Resources.Product;
-            this.customButton1.Img = global::InventoryManagementSystem.Properties.Resources.Product;
-            this.customButton1.ImgHover = global::InventoryManagementSystem.Properties.Resources.Product_hover;
-            this.customButton1.Location = new System.Drawing.Point(390, 29);
-            this.customButton1.Margin = new System.Windows.Forms.Padding(50, 20, 75, 5);
-            this.customButton1.Name = "customButton1";
-            this.customButton1.Size = new System.Drawing.Size(48, 48);
-            this.customButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.customButton1.TabIndex = 1;
-            this.customButton1.TabStop = false;
+            this.buttonProduct.Image = global::InventoryManagementSystem.Properties.Resources.Product;
+            this.buttonProduct.Img = global::InventoryManagementSystem.Properties.Resources.Product;
+            this.buttonProduct.ImgHover = global::InventoryManagementSystem.Properties.Resources.Product_hover;
+            this.buttonProduct.Location = new System.Drawing.Point(390, 29);
+            this.buttonProduct.Margin = new System.Windows.Forms.Padding(50, 20, 75, 5);
+            this.buttonProduct.Name = "buttonProduct";
+            this.buttonProduct.Size = new System.Drawing.Size(48, 48);
+            this.buttonProduct.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonProduct.TabIndex = 1;
+            this.buttonProduct.TabStop = false;
             // 
             // label1
             // 
@@ -233,47 +234,49 @@
             this.panel2.Size = new System.Drawing.Size(1350, 28);
             this.panel2.TabIndex = 1;
             // 
-            // panel3
+            // panelMain
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 120);
-            this.panel3.Margin = new System.Windows.Forms.Padding(0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1350, 581);
-            this.panel3.TabIndex = 2;
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(0, 120);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(1350, 581);
+            this.panelMain.TabIndex = 2;
             // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 729);
-            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "MainWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainWindow";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonCustomer)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonCategory)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonUser)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.customButton1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonProduct)).EndInit();
             this.ResumeLayout(false);
+
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label label1;
-        private CustomButton customButton5;
-        private CustomButton customButton4;
-        private CustomButton customButton3;
-        private CustomButton customButton2;
-        private CustomButton customButton1;
+        private CustomButton buttonOrder;
+        private CustomButton buttonUser;
+        private CustomButton buttonCategory;
+        private CustomButton buttonCustomer;
+        private CustomButton buttonProduct;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;

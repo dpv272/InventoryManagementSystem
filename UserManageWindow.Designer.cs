@@ -255,9 +255,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxPhone;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button buttonSave;
-        private System.Windows.Forms.Button buttonUpdate;
-        private System.Windows.Forms.Button buttonClear;
         private CustomButton customButtonClose;
+        public System.Windows.Forms.Button buttonSave;
+        public System.Windows.Forms.Button buttonUpdate;
+        public System.Windows.Forms.Button buttonClear;
     }
 }
